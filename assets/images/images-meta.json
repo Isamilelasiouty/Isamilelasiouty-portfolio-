@@ -33,6 +33,13 @@
     "width": 1600,
     "height": 574
   },
+  "case-2-travel-main": {
+    "file": "assets/images/case-2-travel-main.webp",
+    "source": "Tourist Office.jpeg",
+    "label": "Tourist office",
+    "width": 1600,
+    "height": 858
+  },
   "case-3-ecommerce-main": {
     "file": "assets/images/case-3-ecommerce-main.webp",
     "source": "GSC 5.jpg",
