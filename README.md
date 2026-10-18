@@ -12,7 +12,7 @@ Zero frameworks, zero dependencies, zero build steps &mdash; 100% pure semantic 
    Place your CV file in `assets/cv/` named `Ismail-El-Asiouty-CV.pdf`.
 
 2. **Replace base URL placeholders**:
-   Search and replace `https://isamilelasiouty.github.io/Isamilelasiouty-portfolio/` with your actual GitHub Pages URL (see section 3 below).
+   Search and replace `https://isamilelasiouty.github.io/Isamilelasiouty-portfolio-/` with your actual GitHub Pages URL (see section 3 below).
 
 3. **Initialize Git and Commit**:
    ```bash
@@ -82,7 +82,7 @@ Zero frameworks, zero dependencies, zero build steps &mdash; 100% pure semantic 
 
 ## 3. Placeholders to Replace Before Launch
 
-Replace `https://isamilelasiouty.github.io/Isamilelasiouty-portfolio/` in the following files:
+Replace `https://isamilelasiouty.github.io/Isamilelasiouty-portfolio-/` in the following files:
 - `index.html` (canonical, og:url, twitter:url, and JSON-LD schema IDs)
 - `case-studies.html` (canonical, og:url, twitter:url, and BreadcrumbList)
 - `ai-search.html` (canonical, og:url, twitter:url, and BreadcrumbList)
