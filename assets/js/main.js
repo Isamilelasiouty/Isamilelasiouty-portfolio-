@@ -96,20 +96,12 @@
       }
     }
 
-    // Hero interactive scroll animation: Rank badge #9 to #3 & subtle parallax
-    if (heroCard && rankBadge) {
+    // Hero interactive scroll animation: Signal path & subtle parallax
+    if (heroCard) {
       const heroRect = heroCard.getBoundingClientRect();
       const heroInView = heroRect.top < window.innerHeight && heroRect.bottom > 0;
       if (heroInView) {
         const heroProgress = Math.max(0, Math.min(1, (window.innerHeight - heroRect.top) / (window.innerHeight + heroRect.height)));
-        // Badge text change & movement
-        if (heroProgress > 0.35) {
-          rankBadge.textContent = 'Rank #3';
-          rankBadge.style.background = 'var(--green)';
-        } else {
-          rankBadge.textContent = 'Rank #9';
-          rankBadge.style.background = 'var(--gold)';
-        }
         
         // Signal path stroke-dashoffset modulation
         if (signalLine) {
@@ -127,6 +119,80 @@
     });
 
     isScrolling = false;
+  }
+
+  // -------------------------------------------------------------------------
+  // 3.1 HERO SEARCH & AI OVERVIEW AUTOMATION SIMULATOR
+  // -------------------------------------------------------------------------
+  function initHeroSearchSimulator() {
+    const queryEl = document.getElementById('hero-query-display');
+    const scanBar = document.getElementById('sim-scan-progress');
+    const rankBadge = document.getElementById('hero-rank-badge');
+    if (!queryEl) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      queryEl.textContent = 'SEO Company';
+      if (scanBar) scanBar.style.width = '100%';
+      return;
+    }
+
+    const queries = [
+      'SEO Company',
+      'Best SEO Specialist',
+      'Technical SEO Audit',
+      'GEO & AI Search Optimization',
+      'High-Intent Organic Growth'
+    ];
+
+    let queryIdx = 0;
+    let charIdx = 0;
+    let isDeleting = false;
+
+    function typeLoop() {
+      const currentQuery = queries[queryIdx];
+
+      if (isDeleting) {
+        charIdx--;
+        queryEl.textContent = currentQuery.substring(0, charIdx);
+        if (charIdx === 0) {
+          isDeleting = false;
+          queryIdx = (queryIdx + 1) % queries.length;
+          setTimeout(typeLoop, 450);
+          return;
+        }
+        setTimeout(typeLoop, 28);
+      } else {
+        charIdx++;
+        queryEl.textContent = currentQuery.substring(0, charIdx);
+        if (charIdx === currentQuery.length) {
+          // Completed typing query: simulate instant AI search index scan
+          if (scanBar) {
+            scanBar.style.width = '100%';
+            setTimeout(() => {
+              scanBar.style.opacity = '0';
+              setTimeout(() => {
+                scanBar.style.width = '0%';
+                scanBar.style.opacity = '1';
+              }, 300);
+            }, 600);
+          }
+          if (rankBadge) {
+            rankBadge.style.transform = 'scale(1.12)';
+            setTimeout(() => {
+              rankBadge.style.transform = 'scale(1)';
+            }, 350);
+          }
+          // Pause to read the ranked result
+          isDeleting = true;
+          setTimeout(typeLoop, 3600);
+          return;
+        }
+        setTimeout(typeLoop, 65 + Math.random() * 45);
+      }
+    }
+
+    // Start with a gentle delay
+    setTimeout(typeLoop, 1000);
   }
 
   function handleScroll() {
@@ -529,6 +595,7 @@
     initArchDiagram();
     initCaseNav();
     initModal();
+    initHeroSearchSimulator();
 
     // Theme toggle button click
     document.querySelectorAll('.theme-toggle').forEach(btn => {
