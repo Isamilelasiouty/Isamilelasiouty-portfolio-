@@ -1,0 +1,14 @@
+# System and temporary files
+.DS_Store
+Thumbs.db
+*.log
+
+# Python cache & venv
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.uv/
+
+# Artifacts or scripts scratch
+scripts/*.tmp

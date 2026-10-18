@@ -1,0 +1,42 @@
+# Project Plan: Ismail El Asiouty SEO Portfolio
+
+## Phase Checklist
+- [x] **P1: Setup & Assets**
+  - [x] Initialize PLAN.md
+  - [x] Inspect source images & generate single contact sheet via Pillow
+  - [x] Build & run `scripts/optimize_images.py` (crop portrait, transparent logo, favicons, og-image, WebP screenshots)
+  - [x] Fetch/create local vector icons (`assets/icons/python.svg`, `assets/icons/r.svg`)
+  - [x] Establish folder structure (`assets/css`, `assets/js`, `assets/images`, `assets/icons`, `assets/cv`, `scripts`)
+  - [x] Create design tokens, typography, reset, grid, command center styling in `assets/css/main.css`
+  - [x] Create core JS architecture in `assets/js/main.js` (theme toggle, observer, nav, lightbox, progress)
+- [x] **P2: Home Page (index.html)**
+  - [x] Build semantic static HTML with structured data (Person, WebSite)
+  - [x] Command center hero with signal path SVG, rank badge animation (#9 to #3), gold particle orbit, illustrative search card
+  - [x] Proof counters, featured case study previews, Python/R automation cards
+  - [x] AI & Search teaser, tools teaser, final CTA, sticky nav & footer
+  - [x] Verify animations, responsiveness, desktop/mobile check
+- [x] **P3: Case Studies Page & Evidence Gallery (case-studies.html)**
+  - [x] Sticky in-page navigation (Case 1, Case 2, Case 3, Evidence)
+  - [x] Case 1 (Medical): metrics, progress rail, before/after visual, GSC Medical 2 & GSC Medical in browser mockup frames
+  - [x] Case 2 (Travel): cannibalization & bot traffic, metrics, 301/Cloudflare actions, "Tourist office" slot / placeholder
+  - [x] Case 3 (E-commerce 36k products): category structure, 404 cleanup, KPI grid, GSC 5 in browser frame
+  - [x] Evidence Gallery: filterable grid (All, AI, Indexing, Search Console reports) of GSC screenshots with accessible lightbox
+  - [x] Verify desktop & mobile layout
+- [x] **P4: AI & Search Page (ai-search.html)**
+  - [x] Architecture comparison: original inline-SVG/interactive HTML diagram (BERT Encoder vs GPT Decoder)
+  - [x] Interactive token attention demo (bidirectional vs causal mask)
+  - [x] Transformer explanation & SEO/GEO/AEO strategic implications
+  - [x] GEO signal network interactive visualization
+  - [x] Verify interactivity and responsive behavior
+- [x] **P5: Tools Scaffold, Contact, 404, SEO Files & Docs**
+  - [x] Build `tools.html` (SEO Software Lab empty state, commented card template, dynamic detail modal)
+  - [x] Build `contact.html` (Email with copy toast, WhatsApp, Phone, LinkedIn, X, CV link)
+  - [x] Build `404.html` on-brand
+  - [x] Generate `robots.txt`, `sitemap.xml`, `.nojekyll`, `.gitignore`
+  - [x] Write comprehensive `README.md` (deployment, editing guide, placeholders, logo licenses, CV note)
+- [x] **P6: QA Pass & Final Report**
+  - [x] Check all internal links and relative path resolution
+  - [x] Verify responsive layouts (320px, 768px, 1024px, 1440px), reduced-motion mode, contrast, zero console errors
+  - [x] Check privacy on screenshots and list any visible domains/properties
+  - [x] Initialize git repo and make first local commit
+  - [x] Generate final report (max 15 lines)

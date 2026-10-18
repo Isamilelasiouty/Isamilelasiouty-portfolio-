@@ -1,0 +1,99 @@
+{
+  "portrait_900": {
+    "file": "assets/images/ismail-el-asiouty-900.webp",
+    "width": 900,
+    "height": 900
+  },
+  "portrait_480": {
+    "file": "assets/images/ismail-el-asiouty-480.webp",
+    "width": 480,
+    "height": 480
+  },
+  "og_image": {
+    "file": "assets/images/og-image.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "logo": {
+    "file": "assets/images/logo-transparent.png",
+    "width": 304,
+    "height": 166
+  },
+  "case-1-medical-main": {
+    "file": "assets/images/case-1-medical-main.webp",
+    "source": "GSC Medical\u00a02.jpg",
+    "label": "GSC Medical 2",
+    "width": 1518,
+    "height": 746
+  },
+  "case-1-medical-secondary": {
+    "file": "assets/images/case-1-medical-secondary.webp",
+    "source": "GSC Medical\u00a0.jpg",
+    "label": "GSC Medical",
+    "width": 1600,
+    "height": 574
+  },
+  "case-3-ecommerce-main": {
+    "file": "assets/images/case-3-ecommerce-main.webp",
+    "source": "GSC 5.jpg",
+    "label": "GSC 5",
+    "width": 1569,
+    "height": 628
+  },
+  "gsc-4": {
+    "file": "assets/images/gsc-4.webp",
+    "source": "GSC 4.jpg",
+    "label": "GSC 4",
+    "width": 1600,
+    "height": 825
+  },
+  "gsc-ai-1": {
+    "file": "assets/images/gsc-ai-1.webp",
+    "source": "GSC AI1.jpeg",
+    "label": "GSC AI1",
+    "width": 1598,
+    "height": 687
+  },
+  "gsc-ai-2": {
+    "file": "assets/images/gsc-ai-2.webp",
+    "source": "GSC AI2.jpeg",
+    "label": "GSC AI2",
+    "width": 1600,
+    "height": 625
+  },
+  "gsc-index-1": {
+    "file": "assets/images/gsc-index-1.webp",
+    "source": "GSC index1.jpeg",
+    "label": "GSC index1",
+    "width": 1600,
+    "height": 657
+  },
+  "gsc-index-2": {
+    "file": "assets/images/gsc-index-2.webp",
+    "source": "GSC index2.jpeg",
+    "label": "GSC index2",
+    "width": 1600,
+    "height": 742
+  },
+  "gsc-1": {
+    "file": "assets/images/gsc-1.webp",
+    "source": "GSC1.jpeg",
+    "label": "GSC1",
+    "width": 1331,
+    "height": 652
+  },
+  "gsc-2": {
+    "file": "assets/images/gsc-2.webp",
+    "source": "GSC2.jpeg",
+    "label": "GSC2",
+    "width": 1303,
+    "height": 612
+  },
+  "gsc-3": {
+    "file": "assets/images/gsc-3.webp",
+    "source": "GSC3.jpeg",
+    "label": "GSC3",
+    "width": 1299,
+    "height": 514
+  }
+}
