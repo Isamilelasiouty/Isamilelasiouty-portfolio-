@@ -82,22 +82,21 @@
             <li><a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a></li>
             <li><a href="contact.html" class="nav-link active" aria-current="page" data-i18n="nav.contact">Contact</a></li>
           </ul>
-
-          <div class="nav-actions">
-            <button type="button" class="lang-toggle" aria-label="Toggle language">
-              <span class="lang-text">عربي</span>
-            </button>
-            <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
-              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </button>
-            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download data-i18n="nav.download_cv">Download CV</a>
-          </div>
+          <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm nav-cv-btn" download data-i18n="nav.download_cv">Download CV</a>
         </div>
 
-        <button type="button" class="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
-          <span></span>
-        </button>
+        <div class="nav-actions-always">
+          <button type="button" class="lang-toggle" aria-label="Toggle language">
+            <span class="lang-text">AR</span>
+          </button>
+          <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+          </button>
+        </div>
       </nav>
     </div>
 
@@ -109,12 +108,12 @@
       <a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a>
       <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
       <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
-        <button type="button" class="btn btn-secondary lang-toggle" style="width: 100%;">
-          <span class="lang-text">عربي</span>
-        </button>
         <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download data-i18n="nav.download_cv">Download CV</a>
-        <button type="button" class="btn btn-secondary theme-toggle" style="width: 100%;" data-i18n="nav.toggle_theme">Toggle Theme</button>
+        <button type="button" class="btn btn-secondary lang-toggle" style="width: 100%;">
+          Language: <span class="lang-text" style="font-weight: 800; margin-left: 6px;">AR</span>
+        </button>
       </div>
+    </div>
     </div>
   </header>
 

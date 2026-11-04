@@ -102,22 +102,21 @@
             <li><a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a></li>
             <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
           </ul>
-
-          <div class="nav-actions">
-            <button type="button" class="lang-toggle" aria-label="Toggle language">
-              <span class="lang-text">عربي</span>
-            </button>
-            <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
-              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </button>
-            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download data-i18n="nav.download_cv">Download CV</a>
-          </div>
+          <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm nav-cv-btn" download data-i18n="nav.download_cv">Download CV</a>
         </div>
 
-        <button type="button" class="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
-          <span></span>
-        </button>
+        <div class="nav-actions-always">
+          <button type="button" class="lang-toggle" aria-label="Toggle language">
+            <span class="lang-text">AR</span>
+          </button>
+          <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button type="button" class="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+          </button>
+        </div>
       </nav>
     </div>
 
@@ -129,12 +128,12 @@
       <a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a>
       <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
-        <button type="button" class="btn btn-secondary lang-toggle" style="width: 100%;">
-          <span class="lang-text">عربي</span>
-        </button>
         <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download data-i18n="nav.download_cv">Download CV</a>
-        <button type="button" class="btn btn-secondary theme-toggle" style="width: 100%;" data-i18n="nav.toggle_theme">Toggle Theme</button>
+        <button type="button" class="btn btn-secondary lang-toggle" style="width: 100%;">
+          Language: <span class="lang-text" style="font-weight: 800; margin-left: 6px;">AR</span>
+        </button>
       </div>
+    </div>
     </div>
   </header>
 
@@ -160,11 +159,11 @@
             </p>
 
             <div class="chip-group" aria-label="Specialties">
-              <span class="chip chip-gold">Technical SEO</span>
-              <span class="chip chip-gold">GEO</span>
-              <span class="chip chip-gold">AEO</span>
-              <span class="chip">Python</span>
-              <span class="chip">R</span>
+              <span class="chip chip-gold" data-i18n="hero.chip_tech">Technical SEO</span>
+              <span class="chip chip-gold" data-i18n="hero.chip_geo">GEO</span>
+              <span class="chip chip-gold" data-i18n="hero.chip_aeo">AEO</span>
+              <span class="chip" data-i18n="hero.chip_py">Python</span>
+              <span class="chip" data-i18n="hero.chip_r">R</span>
             </div>
 
             <div class="hero-actions">
@@ -192,8 +191,8 @@
                 </div>
                 <div>
                   <h2 style="font-size: 1.15rem; margin-bottom: 4px;">Ismail El Asiouty</h2>
-                  <p style="font-size: 0.85rem; color: var(--gold); margin: 0; font-family: var(--font-mono);">Search Architecture</p>
-                  <p style="font-size: 0.78rem; color: var(--text-3); margin-top: 4px;">Audits &bull; Automation &bull; GEO/AEO</p>
+                  <p style="font-size: 0.85rem; color: var(--gold); margin: 0; font-family: var(--font-mono);" data-i18n="hero.card_sub">Search Architecture</p>
+                  <p style="font-size: 0.78rem; color: var(--text-3); margin-top: 4px;" data-i18n="hero.card_meta">Audits &bull; Automation &bull; GEO/AEO</p>
                 </div>
               </div>
 
@@ -419,9 +418,9 @@
     <section class="section">
       <div class="container">
         <div class="section-head reveal">
-          <span class="section-tag">Impact Metrics</span>
-          <h2>Featured Case Studies</h2>
-          <p>Real performance data from Google Search Console showing sustainable, organic growth across diverse sectors.</p>
+          <span class="section-tag" data-i18n="cases.section_tag">Impact Metrics</span>
+          <h2 data-i18n="cases.section_title">Featured Case Studies</h2>
+          <p data-i18n="cases.section_desc">Real performance data from Google Search Console showing sustainable, organic growth across diverse sectors.</p>
         </div>
 
         <div class="results-grid reveal-stagger">
@@ -430,9 +429,9 @@
             <div class="result-card-thumb">
               <img src="assets/images/case-1-medical-main.webp" alt="Google Search Console report for Medical website" width="1518" height="746" loading="lazy">
             </div>
-            <span class="result-card-meta">Healthcare &bull; Internal Linking</span>
-            <h3>Medical Website</h3>
-            <p>Full technical audit and internal link architecture restructuring to connect orphan pages and boost qualified patient traffic.</p>
+            <span class="result-card-meta" data-i18n="cases.case1_meta">Healthcare &bull; Internal Linking</span>
+            <h3 data-i18n="cases.case1_title">Medical Website</h3>
+            <p data-i18n="cases.case1_desc">Full technical audit and internal link architecture restructuring to connect orphan pages and boost qualified patient traffic.</p>
             <div class="metric-badge-group">
               <div class="metric-pill">
                 <span class="metric-label">Clicks</span>
@@ -542,9 +541,7 @@
 
         <!-- Text-Only Tool Chips (Strictly Text, No Third-Party Logos) -->
         <div style="margin-top: 36px; text-align: center;" class="reveal">
-          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-3); margin-bottom: 12px; margin-left: auto; margin-right: auto;">
-            Enterprise Diagnostic Platforms
-          </p>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-3); margin-bottom: 12px; margin-left: auto; margin-right: auto;" data-i18n="platforms.tag">Enterprise Diagnostic Platforms</p>
           <div class="chip-group" style="justify-content: center;">
             <span class="chip">Google Search Console</span>
             <span class="chip">Google Analytics</span>
@@ -560,24 +557,20 @@
         <div class="card card-command reveal" style="padding: clamp(32px, 5vw, 56px);">
           <div class="grid-12" style="align-items: center;">
             <div style="grid-column: span 7;">
-              <span class="section-tag">Future-Proof Search</span>
-              <h2>How AI Reads and Writes, and What It Means for SEO</h2>
-              <p style="margin: 16px 0 24px;">
-                Understanding the architectural mechanics between BERT (encoder-only bidirectional understanding) and GPT (decoder-only autoregressive generation) is vital for Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO).
-              </p>
-              <a href="ai-search.html" class="btn btn-primary">
-                Explore the Transformer Architecture &rarr;
-              </a>
+              <span class="section-tag" data-i18n="ai.tag">Future-Proof Search</span>
+              <h2 data-i18n="ai.title">How AI Reads and Writes, and What It Means for SEO</h2>
+              <p style="margin: 16px 0 24px;" data-i18n="ai.desc">Understanding the architectural mechanics between BERT (encoder-only bidirectional understanding) and GPT (decoder-only autoregressive generation) is vital for Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO).</p>
+              <a href="ai-search.html" class="btn btn-primary" data-i18n="ai.btn">Explore the Transformer Architecture &rarr;</a>
             </div>
             <div style="grid-column: span 5; display: flex; justify-content: center;">
               <div style="width: 100%; max-width: 320px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); text-align: center;">
-                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--gold); margin-bottom: 10px;">TRANSFORMER MODEL</div>
+                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--gold); margin-bottom: 10px;" data-i18n="ai.model_badge">TRANSFORMER MODEL</div>
                 <div style="display: flex; justify-content: space-around; font-weight: 700; margin: 18px 0; font-family: var(--font-heading);">
                   <span style="color: var(--text);">BERT <small style="display:block; font-size:0.75rem; color:var(--text-3);">Encoder</small></span>
                   <span style="color: var(--gold);">vs</span>
                   <span style="color: var(--text);">GPT <small style="display:block; font-size:0.75rem; color:var(--text-3);">Decoder</small></span>
                 </div>
-                <span class="chip chip-gold" style="font-size: 0.75rem;">Interactive SVG Diagram</span>
+                <span class="chip chip-gold" style="font-size: 0.75rem;" data-i18n="ai.diagram_badge">Interactive SVG Diagram</span>
               </div>
             </div>
           </div>
@@ -594,7 +587,7 @@
             <h3 data-i18n="tools.lab_title">Custom SEO Diagnostic &amp; Automation Tools</h3>
             <p data-i18n="tools.lab_desc">Python and AI-powered utilities built to automate issue detection and streamline audits, led by the flagship SEO GPS automation platform.</p>
           </div>
-          <a href="tools.html" class="btn btn-secondary">Visit Software Lab &rarr;</a>
+          <a href="tools.html" class="btn btn-secondary" data-i18n="tools.lab_btn">Visit Software Lab &rarr;</a>
         </div>
       </div>
     </section>
@@ -604,10 +597,10 @@
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;" class="reveal">
           <div>
-            <h3 style="font-size: 1.3rem;">Download My Complete Curriculum Vitae</h3>
-            <p style="font-size: 0.95rem; margin-top: 4px;">Review in-depth technical competencies, project milestones, and professional background.</p>
+            <h3 style="font-size: 1.3rem;" data-i18n="cv.title">Download My Complete Curriculum Vitae</h3>
+            <p style="font-size: 0.95rem; margin-top: 4px;" data-i18n="cv.desc">Review in-depth technical competencies, project milestones, and professional background.</p>
           </div>
-          <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download>
+          <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download data-i18n="cv.btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Download Ismail-El-Asiouty-CV.pdf
           </a>
@@ -619,14 +612,12 @@
     <section class="section" style="text-align: center;">
       <div class="container">
         <div class="reveal" style="max-width: 680px; margin: 0 auto;">
-          <span class="section-tag">Get in Touch</span>
-          <h2 style="margin-bottom: 16px;">Ready to elevate your search visibility?</h2>
-          <p style="margin: 0 auto 28px;">
-            Let's discuss technical audits, internal linking architecture, or Generative Engine Optimization for your web properties.
-          </p>
+          <span class="section-tag" data-i18n="contact.tag">Get in Touch</span>
+          <h2 style="margin-bottom: 16px;" data-i18n="contact.title">Ready to elevate your search visibility?</h2>
+          <p style="margin: 0 auto 28px;" data-i18n="contact.desc">Let's discuss technical audits, internal linking architecture, or Generative Engine Optimization for your web properties.</p>
           <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
-            <button type="button" class="btn btn-secondary" data-copy="ismailelasiouty3@gmail.com">Copy Email Address</button>
+            <a href="contact.html" class="btn btn-primary" data-i18n="contact.cta_btn">Start a Conversation</a>
+            <button type="button" class="btn btn-secondary" data-copy="ismailelasiouty3@gmail.com" data-i18n="contact.copy_email">Copy Email Address</button>
           </div>
         </div>
       </div>
@@ -660,7 +651,7 @@
 
         <div class="footer-links">
           <div class="footer-col">
-            <h5>Navigation</h5>
+            <h5 data-i18n="footer.nav_title">Navigation</h5>
             <ul>
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="case-studies.html" data-i18n="nav.case_studies">Case Studies</a></li>
@@ -681,7 +672,7 @@
           </div>
 
           <div class="footer-col">
-            <h5>Connect</h5>
+            <h5 data-i18n="footer.connect_title">Connect</h5>
             <ul>
               <li><a href="https://www.linkedin.com/in/ismailelasiouty/" target="_blank" rel="noopener">LinkedIn</a></li>
               <li><a href="https://x.com/ismailelasiouty" target="_blank" rel="noopener">X (Twitter)</a></li>
@@ -691,7 +682,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>&copy; 2026 Ismail El Asiouty. All rights reserved.</span>
+        <span>&copy; 2026 Ismail El Asiouty. <span data-i18n="footer.rights">All rights reserved.</span></span>
         <span>Static SEO Portfolio &bull; GitHub Pages Hosted</span>
       </div>
     </div>

@@ -32,7 +32,7 @@
     });
   }
 
-  // -------------------------------------------------------------------------
+  // -----------------------------------------------------------------------  // -------------------------------------------------------------------------
   // 1.1 BILINGUAL CONTROLLER (EN / AR)
   // -------------------------------------------------------------------------
   const LANG_KEY = 'asiouty_portfolio_lang';
@@ -51,11 +51,18 @@
       'hero.title': 'Ismail El Asiouty',
       'hero.role': 'SEO Specialist',
       'hero.intro': 'Product-minded SEO Specialist with proven success optimizing 23+ websites across diverse industries. Scaled organic search performance on Google Search Console (3-month comparison): grew clicks from 1.74K to 4.82K (+177%), impressions from 253K to 691K (+173%), and improved average position from 9.2 to 5.2. Creator of 9+ SEO tools and founder of “SEO GPS” automation platform. Business Information Systems student specializing in Website Development.',
+      'hero.chip_tech': 'Technical SEO',
+      'hero.chip_geo': 'GEO',
+      'hero.chip_aeo': 'AEO',
+      'hero.chip_py': 'Python',
+      'hero.chip_r': 'R',
       'hero.cta_cv': 'Download CV',
       'hero.cta_cases': 'View Case Studies',
       'hero.cta_contact': 'Contact me',
       'hero.signal_monitor': 'Organic Signal Monitor',
       'hero.live_analysis': 'Live Index Analysis',
+      'hero.card_sub': 'Search Architecture',
+      'hero.card_meta': 'Audits • Automation • GEO/AEO',
       'proof.years_label': 'Years of experience',
       'proof.sites_label': 'Websites optimized',
       'proof.tools_label': 'SEO tools & platforms built',
@@ -65,9 +72,33 @@
       'sim.sitelink_gps': 'SEO GPS Platform',
       'sim.sitelink_ai': 'AI & GEO Engine',
       'sim.sitelink_contact': 'Contact Ismail',
+      'cases.section_tag': 'Impact Metrics',
+      'cases.section_title': 'Featured Case Studies',
+      'cases.section_desc': 'Real performance data from Google Search Console showing sustainable, organic growth across diverse sectors.',
+      'cases.case1_meta': 'Healthcare • Internal Linking',
+      'cases.case1_title': 'Medical Website',
+      'cases.case1_desc': 'Full technical audit and internal link architecture restructuring to connect orphan pages and boost qualified patient traffic.',
+      'cases.case2_meta': 'Travel • Indexation Strategy',
+      'cases.case2_title': 'Tourist Office',
+      'cases.case2_desc': 'Comprehensive technical audit, crawl budget consolidation, and strategic content updates to expand visibility in competitive tourism queries.',
+      'cases.case3_meta': 'E-Commerce • Architecture',
+      'cases.case3_title': 'E-Commerce Store',
+      'cases.case3_desc': 'Faceted navigation audit, structured data schema deployment, and internal link optimization across deep category hierarchies.',
+      'cases.all_cases_btn': 'Explore All Case Studies & Evidence →',
+      'platforms.tag': 'Enterprise Diagnostic Platforms',
+      'ai.tag': 'Future-Proof Search',
+      'ai.title': 'How AI Reads and Writes, and What It Means for SEO',
+      'ai.desc': 'Understanding the architectural mechanics between BERT (encoder-only bidirectional understanding) and GPT (decoder-only autoregressive generation) is vital for Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO).',
+      'ai.btn': 'Explore the Transformer Architecture →',
+      'ai.model_badge': 'TRANSFORMER MODEL',
+      'ai.diagram_badge': 'Interactive SVG Diagram',
       'tools.lab_tag': 'SEO Software Lab',
       'tools.lab_title': 'Custom SEO Diagnostic & Automation Tools',
       'tools.lab_desc': 'Python and AI-powered utilities built to automate issue detection and streamline audits, led by the flagship SEO GPS automation platform.',
+      'tools.lab_btn': 'Visit Software Lab →',
+      'tools.page_tag': 'Custom Tooling',
+      'tools.page_title': 'SEO Software Lab',
+      'tools.page_desc': 'Python and AI-powered tools I built to automate issue detection and streamline audits.',
       'tools.gps_meta': 'Flagship Automation Platform • Live Web App',
       'tools.gps_title': 'SEO GPS — Intelligent Search Navigation & Diagnostics',
       'tools.gps_desc': 'Automated SEO guidance platform engineered by Ismail El Asiouty. Analyzes on-page architecture, visualizes keyword positioning trajectories, automates repetitive technical checks, and provides clear algorithmic remediation pathways.',
@@ -78,7 +109,19 @@
       'tools.tool1_title': 'Orphan Page & Internal Link Auditor',
       'tools.tool1_desc': 'Crawl analysis engine that maps the complete internal URL link graph, detecting isolated orphan pages and calculating internal PageRank distribution.',
       'tools.tool2_title': 'AI Overview Readiness Scanner',
-      'tools.tool2_desc': 'Analyzes entity density, schema markup compliance, and high-intent Q&A structure for inclusion in Google AI Overviews and answer engines.'
+      'tools.tool2_desc': 'Analyzes entity density, schema markup compliance, and high-intent Q&A structure for inclusion in Google AI Overviews and answer engines.',
+      'cv.title': 'Download My Complete Curriculum Vitae',
+      'cv.desc': 'Review in-depth technical competencies, project milestones, and professional background.',
+      'cv.btn': 'Download Ismail-El-Asiouty-CV.pdf',
+      'contact.tag': 'Get in Touch',
+      'contact.title': 'Ready to elevate your search visibility?',
+      'contact.desc': 'Let\'s discuss technical audits, internal linking architecture, or Generative Engine Optimization for your web properties.',
+      'contact.cta_btn': 'Start a Conversation',
+      'contact.copy_email': 'Copy Email Address',
+      'footer.bio': 'SEO Specialist focused on Technical SEO audits, Generative Engine Optimization (GEO/AEO), and Python automation.',
+      'footer.nav_title': 'Navigation',
+      'footer.connect_title': 'Connect',
+      'footer.rights': 'All rights reserved.'
     },
     ar: {
       'nav.home': 'الرئيسية',
@@ -92,11 +135,18 @@
       'hero.title': 'إسماعيل الأسيوطي',
       'hero.role': 'أخصائي تحسين محركات البحث (SEO Specialist)',
       'hero.intro': 'أخصائي سيو ذو عقلية تركّز على تطوير المنتجات والنمو الرقمي، أمتلك سجلاً حافلاً في تحسين وتطوير أكثر من 23 موقعاً إلكترونياً عبر قطاعات متنوعة. حققت نمواً قياسياً في الأداء العضوي عبر Google Search Console (مقارنة 3 أشهر): زيادة النقرات من 1.74K إلى 4.82K (+177%)، وارتفاع مرات الظهور من 253K إلى 691K (+173%)، وتحسين متوسط الترتيب من 9.2 إلى 5.2. مطور لأكثر من 9 أدوات سيو ومؤسس منصة الأتمتة «SEO GPS». طالب نظم معلومات الأعمال (BIS) متخصص في تطوير المواقع.',
+      'hero.chip_tech': 'سيو تقني (Technical)',
+      'hero.chip_geo': 'محركات التوليد (GEO)',
+      'hero.chip_aeo': 'محركات الإجابة (AEO)',
+      'hero.chip_py': 'بايثون',
+      'hero.chip_r': 'لغة R',
       'hero.cta_cv': 'تحميل السيرة الذاتية (CV)',
       'hero.cta_cases': 'عرض دراسات الحالة',
       'hero.cta_contact': 'تواصل معي',
       'hero.signal_monitor': 'مراقب إشارات الفهرسة العضوية',
       'hero.live_analysis': 'تحليل مباشر للفهرسة',
+      'hero.card_sub': 'معمارية البحث والنمو',
+      'hero.card_meta': 'فحص تقني • أتمتة برمجية • GEO/AEO',
       'proof.years_label': 'سنوات خبرة متخصصة',
       'proof.sites_label': 'موقعاً إلكترونياً تم تحسينه',
       'proof.tools_label': 'أدوات ومنصات سيو مؤتمتة',
@@ -104,11 +154,35 @@
       'sim.snippet': 'أخصائي سيو ذو عقلية تركز على تطوير المنتجات بخبرة في تحسين أكثر من 23 موقعاً إلكترونياً. نمو قياسي على Google Search Console: <strong>+177% نقرات</strong>، <strong>+173% ظهور</strong>، وتحسين الترتيب من 9.2 إلى 5.2. مؤسس منصة «SEO GPS» للأتمتة.',
       'sim.sitelink_cases': 'دراسات الحالة',
       'sim.sitelink_gps': 'منصة SEO GPS',
-      'sim.sitelink_ai': 'محرك الذكاء الاصطناعي (GEO)',
+      'sim.sitelink_ai': 'محرك الذكاء الاصطناعي',
       'sim.sitelink_contact': 'تواصل مع إسماعيل',
+      'cases.section_tag': 'مؤشرات الأثر والنتائج',
+      'cases.section_title': 'دراسات حالة بارزة لنمو حقيقي',
+      'cases.section_desc': 'بيانات أداء فعلية موثقة من Google Search Console تثبت نمواً عضوياً مستداماً عبر قطاعات متعددة.',
+      'cases.case1_meta': 'الرعاية الصحية • الربط الداخلي',
+      'cases.case1_title': 'موقع طبي متخصص',
+      'cases.case1_desc': 'تدقيق تقني شامل وإعادة هيكلة معمارية الربط الداخلي لربط الصفحات اليتيمة ومضاعفة حركة المرضى المستهدفين.',
+      'cases.case2_meta': 'السفر والسياحة • التوسع الدولي',
+      'cases.case2_title': 'مكتب سياحة وسفر',
+      'cases.case2_desc': 'استراتيجية أرشفة متعددة اللغات وهيكلة محتوى الوجهات لزيادة الحجوزات المباشرة وحصص السوق.',
+      'cases.case3_meta': 'تجارة إلكترونية • معمارية الفئات',
+      'cases.case3_title': 'متجر تجارة إلكترونية ضخم',
+      'cases.case3_desc': 'تحسين بنية 36 ألف منتج ومعالجة مشكلات المحتوى المكرر وميزانية الزحف لتحقيق نمو مبيعات قياسي.',
+      'cases.all_cases_btn': 'استكشف جميع دراسات الحالة والأدلة ←',
+      'platforms.tag': 'منصات الفحص والتحليل المؤسسي',
+      'ai.tag': 'مستقبل محركات البحث',
+      'ai.title': 'كيف يقرأ الذكاء الاصطناعي ويكتب، وماذا يعني ذلك للسيو؟',
+      'ai.desc': 'فهم الفروق المعمارية بين BERT (الترميز ثنائي الاتجاه) و GPT (التوليد التتابعي) أمر جوهري للظهور في ملخصات الذكاء الاصطناعي (Google AI Overviews) ومحركات الإجابة.',
+      'ai.btn': 'استكشف معمارية Transformer ومحركات الذكاء الاصطناعي ←',
+      'ai.model_badge': 'نموذج TRANSFORMER',
+      'ai.diagram_badge': 'مخطط SVG تفاعلي',
       'tools.lab_tag': 'معمل برمجيات السيو',
       'tools.lab_title': 'أدوات الفحص والأتمتة المخصصة',
       'tools.lab_desc': 'حلول وأدوات برمجية مبنية بلغة بايثون والذكاء الاصطناعي لاكتشاف المشكلات التقنية وتسريع عمليات التدقيق، تقودها منصة SEO GPS المتطورة.',
+      'tools.lab_btn': 'زيارة معمل الأدوات ←',
+      'tools.page_tag': 'برمجيات مخصصة',
+      'tools.page_title': 'معمل برمجيات وأدوات السيو',
+      'tools.page_desc': 'أدوات وحلول برمجية مبنية بلغة بايثون والذكاء الاصطناعي لأتمتة فحص المواقع وتسريع عمليات التدقيق.',
       'tools.gps_meta': 'المنصة الرائدة للأتمتة • تطبيق ويب مباشر',
       'tools.gps_title': 'SEO GPS — الملاحة الذكية وتشخيص محركات البحث',
       'tools.gps_desc': 'منصة أتمتة وإرشاد سيو متقدمة من تطوير إسماعيل الأسيوطي. تحلل البنية الداخلية لصفحات الويب، وترسم مسار تمركز الكلمات المفتاحية، وتؤتمت الفحوصات التقنية المتكررة مع مسارات علاجية واضحة.',
@@ -119,7 +193,19 @@
       'tools.tool1_title': 'فاحص الصفحات اليتيمة والروابط الداخلية',
       'tools.tool1_desc': 'محرك تحليل زحف يرسم مخطط الربط الداخلي للروابط (Internal Link Graph)، ويكتشف الصفحات اليتيمة المعزولة ويوزع قوة البيج رانك الداخلي.',
       'tools.tool2_title': 'فاحص جاهزية الذكاء الاصطناعي (AI Overviews)',
-      'tools.tool2_desc': 'يقيس كثافة الكيانات (Entities) وتطابق بيانات Schema وهيكلة الأسئلة والأجوبة المؤهلة للظهور في ملخصات الذكاء الاصطناعي من جوجل ومحركات الإجابة.'
+      'tools.tool2_desc': 'يقيس كثافة الكيانات (Entities) وتطابق بيانات Schema وهيكلة الأسئلة والأجوبة المؤهلة للظهور في ملخصات الذكاء الاصطناعي من جوجل ومحركات الإجابة.',
+      'cv.title': 'تحميل السيرة الذاتية المهنية الكاملة',
+      'cv.desc': 'اطلع على الكفاءات التقنية المتعمقة، محطات المشاريع الناجحة، والخلفية المهنية الموثقة.',
+      'cv.btn': 'تحميل السيرة الذاتية (PDF)',
+      'contact.tag': 'تواصل معي',
+      'contact.title': 'جاهز للارتقاء بظهور موقعك في صدارة محركات البحث؟',
+      'contact.desc': 'دعنا نناقش تدقيق موقعك التقني، معمارية الروابط الداخلية، أو استراتيجيات الظهور في ملخصات الذكاء الاصطناعي.',
+      'contact.cta_btn': 'ابدأ محادثة عمل الآن',
+      'contact.copy_email': 'نسخ البريد الإلكتروني',
+      'footer.bio': 'أخصائي سيو متخصص في التدقيق التقني، محركات الذكاء الاصطناعي (GEO/AEO)، وأتمتة بايثون.',
+      'footer.nav_title': 'روابط الموقع',
+      'footer.connect_title': 'قنوات التواصل',
+      'footer.rights': 'جميع الحقوق محفوظة.'
     }
   };
 
@@ -149,10 +235,25 @@
       }
     });
 
-    // Update lang-toggle buttons label
+    // Update lang-toggle button text:
+    // When in Arabic, show EN (to switch to English).
+    // When in English, show AR (to switch to Arabic).
+    const targetLabel = currentLang === 'ar' ? 'EN' : 'AR';
     document.querySelectorAll('.lang-toggle .lang-text').forEach(span => {
-      span.textContent = currentLang === 'ar' ? 'English' : 'عربي';
+      span.textContent = targetLabel;
     });
+
+    // Ensure search result title strictly remains Ismail El Asiouty
+    const simTitleLink = document.getElementById('hero-result-title');
+    if (simTitleLink) {
+      simTitleLink.textContent = 'Ismail El Asiouty';
+    }
+
+    // Update snippet
+    const simSnippet = document.getElementById('hero-result-snippet');
+    if (simSnippet && dict['sim.snippet']) {
+      simSnippet.innerHTML = dict['sim.snippet'];
+    }
   }
 
   function toggleLanguage() {
@@ -168,7 +269,6 @@
       setLanguage('en');
     }
   }
-
 
   // -------------------------------------------------------------------------
   // 2. MOBILE NAVIGATION
