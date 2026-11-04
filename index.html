@@ -30,7 +30,7 @@
   <!-- Preconnect & Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/main.css">
@@ -96,19 +96,22 @@
 
         <div class="nav-desktop">
           <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-            <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-            <li><a href="ai-search.html" class="nav-link">AI &amp; Search</a></li>
-            <li><a href="tools.html" class="nav-link">Tools</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link active" aria-current="page" data-i18n="nav.home">Home</a></li>
+            <li><a href="case-studies.html" class="nav-link" data-i18n="nav.case_studies">Case Studies</a></li>
+            <li><a href="ai-search.html" class="nav-link" data-i18n="nav.ai_search">AI &amp; Search</a></li>
+            <li><a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
           </ul>
 
           <div class="nav-actions">
+            <button type="button" class="lang-toggle" aria-label="Toggle language">
+              <span class="lang-text">عربي</span>
+            </button>
             <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
               <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
               <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
             </button>
-            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download>Download CV</a>
+            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download data-i18n="nav.download_cv">Download CV</a>
           </div>
         </div>
 
@@ -120,14 +123,17 @@
 
     <!-- Mobile Drawer -->
     <div class="nav-mobile-drawer" aria-label="Mobile Navigation">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="case-studies.html" class="nav-link">Case Studies</a>
-      <a href="ai-search.html" class="nav-link">AI &amp; Search</a>
-      <a href="tools.html" class="nav-link">Tools</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+      <a href="case-studies.html" class="nav-link" data-i18n="nav.case_studies">Case Studies</a>
+      <a href="ai-search.html" class="nav-link" data-i18n="nav.ai_search">AI &amp; Search</a>
+      <a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a>
+      <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
       <div style="margin-top: 16px; display: flex; flex-direction: column; gap: 12px;">
-        <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download>Download CV</a>
-        <button type="button" class="btn btn-secondary theme-toggle" style="width: 100%;">Toggle Theme</button>
+        <button type="button" class="btn btn-secondary lang-toggle" style="width: 100%;">
+          <span class="lang-text">عربي</span>
+        </button>
+        <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download data-i18n="nav.download_cv">Download CV</a>
+        <button type="button" class="btn btn-secondary theme-toggle" style="width: 100%;" data-i18n="nav.toggle_theme">Toggle Theme</button>
       </div>
     </div>
   </header>
@@ -141,16 +147,16 @@
           <!-- Text Content -->
           <div class="hero-content reveal">
             <div class="hero-badge-wrap">
-              <span class="section-tag">SEO Command Center</span>
+              <span class="section-tag" data-i18n="hero.badge">SEO Command Center</span>
             </div>
 
             <div class="hero-title-wrap">
-              <h1 class="hero-title">Ismail El Asiouty</h1>
-              <span class="hero-role">SEO Specialist</span>
+              <h1 class="hero-title" data-i18n="hero.title">Ismail El Asiouty</h1>
+              <span class="hero-role" data-i18n="hero.role">SEO Specialist</span>
             </div>
 
-            <p class="hero-intro">
-              SEO Specialist with 2+ years of experience improving search visibility and technical performance across 15+ websites in multiple industries. I combine technical SEO audits, keyword research, and on-page optimization with Generative Engine Optimization (GEO) and Answer Engine Optimization (AEO) to win visibility in AI-driven results such as Google AI Overviews and ChatGPT. I turn Google Analytics and Search Console data into clear reports and decisions, use Python and R for deeper analysis, and have built 8+ Python and AI-powered tools that automate issue detection and streamline audits.
+            <p class="hero-intro" data-i18n="hero.intro">
+              Product-minded SEO Specialist with proven success optimizing 23+ websites across diverse industries. Scaled organic search performance on Google Search Console (3-month comparison): grew clicks from 1.74K to 4.82K (+177%), impressions from 253K to 691K (+173%), and improved average position from 9.2 to 5.2. Creator of 9+ SEO tools and founder of “SEO GPS” automation platform. Business Information Systems student specializing in Website Development.
             </p>
 
             <div class="chip-group" aria-label="Specialties">
@@ -162,12 +168,12 @@
             </div>
 
             <div class="hero-actions">
-              <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download>
+              <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary" download data-i18n="hero.cta_cv">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 Download CV
               </a>
-              <a href="case-studies.html" class="btn btn-secondary">View Case Studies</a>
-              <a href="contact.html" class="btn btn-secondary">Contact me</a>
+              <a href="case-studies.html" class="btn btn-secondary" data-i18n="hero.cta_cases">View Case Studies</a>
+              <a href="contact.html" class="btn btn-secondary" data-i18n="hero.cta_contact">Contact me</a>
             </div>
           </div>
 
@@ -201,15 +207,32 @@
                 </svg>
               </div>
 
-              <!-- Live Simulated Search Engine & AI Overview Automation -->
+              <!-- Authentic Google Live Search & AI Overview Simulator -->
               <div class="hero-search-simulator">
                 <!-- Search Bar with Live Typewriter -->
-                <div class="sim-search-bar" role="search" aria-label="Simulated Live Search Engine">
+                <div class="sim-search-bar" role="search" aria-label="Authentic Google Search Simulation">
                   <div class="sim-search-input-wrap">
-                    <svg class="sim-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    <span id="hero-query-display" class="sim-query-display">SEO Company</span><span class="sim-cursor"></span>
+                    <!-- Official Google 'G' Multi-Color Icon -->
+                    <svg class="sim-google-g" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                      <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.665-5.17 3.665-9.12z"/>
+                      <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.26v3.13C3.26 21.36 7.33 24 12 24z"/>
+                      <path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.58H1.26C.46 8.18 0 9.99 0 12s.46 3.82 1.26 5.42l4.02-3.13z"/>
+                      <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.26 6.58l4.02 3.13c.95-2.83 3.6-4.96 6.72-4.96z"/>
+                    </svg>
+                    <span id="hero-query-display" class="sim-query-display">SEO</span><span class="sim-cursor"></span>
                   </div>
-                  <span class="sim-engine-tag">AI Indexing</span>
+                  <div class="sim-search-actions" aria-hidden="true">
+                    <!-- Google Mic SVG -->
+                    <svg class="sim-action-icon sim-mic-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                    </svg>
+                    <!-- Google Lens SVG -->
+                    <svg class="sim-action-icon sim-lens-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                      <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                  </div>
                 </div>
 
                 <!-- Radar Scan Bar -->
@@ -217,26 +240,45 @@
                   <div id="sim-scan-progress" class="sim-scan-progress"></div>
                 </div>
 
-                <!-- Top Ranking & AI Overview Card -->
+                <!-- Top Ranking Organic Result Card -->
                 <div class="sim-result-card">
                   <div class="sim-result-header">
-                    <span class="sim-ai-pill"><span style="color:var(--gold);">&#10022;</span> AI Overview &bull; Top Citation</span>
-                    <span id="hero-rank-badge" class="rank-badge">Rank #1</span>
+                    <div class="sim-url-row">
+                      <div class="sim-favicon">
+                        <img src="assets/images/logo-transparent.png" alt="Logo" width="20" height="20">
+                      </div>
+                      <div class="sim-url-text">
+                        <span class="sim-url-site" data-i18n="sim.site_name">Ismail El Asiouty</span>
+                        <span class="sim-url-path">https://isamilelasiouty.github.io/Isamilelasiouty-portfolio-/</span>
+                      </div>
+                    </div>
+                    <div class="sim-header-badges">
+                      <span id="hero-rank-badge" class="rank-badge">Rank #1</span>
+                    </div>
                   </div>
-                  <div class="sim-url-row">
-                    <span class="sim-favicon">S</span>
-                    <span>https://isamilelasiouty.github.io &rsaquo; seo-specialist</span>
-                    <span class="sim-verified">&check; Verified</span>
-                  </div>
-                  <h3 class="sim-title">Ismail El Asiouty &mdash; <span>SEO Specialist &amp; Search Architect</span></h3>
-                  <p class="sim-snippet">
-                    Proven organic growth: <strong>+177% clicks</strong>, <strong>4 positions higher</strong>, and technical authority across 15+ domains. Optimized for Google AI Overviews &amp; Answer Engines.
+                  <h3 class="sim-title">
+                    <a href="index.html" class="sim-title-link" id="hero-result-title">Ismail El Asiouty</a>
+                  </h3>
+                  <p class="sim-snippet" id="hero-result-snippet" data-i18n="sim.snippet">
+                    Product-minded SEO Specialist with proven success optimizing 23+ websites across diverse industries. Scaled GSC performance: <strong>+177% clicks</strong>, <strong>+173% impressions</strong>, avg position 9.2 to 5.2. Founder of “SEO GPS” automation platform.
                   </p>
                   <div class="sim-sitelinks-grid">
-                    <span class="sim-sitelink-badge"><span>Healthcare</span> <strong style="color:var(--green);">+177%</strong></span>
-                    <span class="sim-sitelink-badge"><span>Travel</span> <strong style="color:var(--green);">+71%</strong></span>
-                    <span class="sim-sitelink-badge"><span>E-Commerce</span> <strong>36k SKUs</strong></span>
-                    <span class="sim-sitelink-badge"><span>Automation</span> <strong>8+ Tools</strong></span>
+                    <a href="case-studies.html" class="sim-sitelink-badge">
+                      <span data-i18n="sim.sitelink_cases">Case Studies</span>
+                      <strong style="color:var(--green);">+177% Clicks</strong>
+                    </a>
+                    <a href="https://isamilelasiouty.github.io/seo-gps/" target="_blank" rel="noopener" class="sim-sitelink-badge">
+                      <span data-i18n="sim.sitelink_gps">SEO GPS Platform</span>
+                      <strong style="color:var(--gold);">Live Tool &rarr;</strong>
+                    </a>
+                    <a href="ai-search.html" class="sim-sitelink-badge">
+                      <span data-i18n="sim.sitelink_ai">AI &amp; GEO Engine</span>
+                      <strong style="color:var(--text-2);">AEO / LLM</strong>
+                    </a>
+                    <a href="contact.html" class="sim-sitelink-badge">
+                      <span data-i18n="sim.sitelink_contact">Contact Ismail</span>
+                      <strong style="color:var(--gold);">Hire Specialist</strong>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -252,15 +294,15 @@
         <div class="proof-grid">
           <div class="proof-item">
             <span class="proof-number" data-counter="2" data-suffix="+">2+</span>
-            <span class="proof-label">Years of experience</span>
+            <span class="proof-label" data-i18n="proof.years_label">Years of experience</span>
           </div>
           <div class="proof-item">
-            <span class="proof-number" data-counter="15" data-suffix="+">15+</span>
-            <span class="proof-label">Websites improved</span>
+            <span class="proof-number" data-counter="23" data-suffix="+">23+</span>
+            <span class="proof-label" data-i18n="proof.sites_label">Websites optimized</span>
           </div>
           <div class="proof-item">
-            <span class="proof-number" data-counter="8" data-suffix="+">8+</span>
-            <span class="proof-label">Python &amp; AI tools built</span>
+            <span class="proof-number" data-counter="9" data-suffix="+">9+</span>
+            <span class="proof-label" data-i18n="proof.tools_label">SEO tools &amp; platforms built</span>
           </div>
         </div>
       </div>
@@ -548,9 +590,9 @@
       <div class="container">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;" class="reveal">
           <div>
-            <span class="section-tag">SEO Software Lab</span>
-            <h3>Custom SEO Diagnostic &amp; Automation Tools</h3>
-            <p>Python and AI-powered utilities built to automate issue detection and streamline audits. New tools coming soon.</p>
+            <span class="section-tag" data-i18n="tools.lab_tag">SEO Software Lab</span>
+            <h3 data-i18n="tools.lab_title">Custom SEO Diagnostic &amp; Automation Tools</h3>
+            <p data-i18n="tools.lab_desc">Python and AI-powered utilities built to automate issue detection and streamline audits, led by the flagship SEO GPS automation platform.</p>
           </div>
           <a href="tools.html" class="btn btn-secondary">Visit Software Lab &rarr;</a>
         </div>
@@ -620,11 +662,11 @@
           <div class="footer-col">
             <h5>Navigation</h5>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="case-studies.html">Case Studies</a></li>
-              <li><a href="ai-search.html">AI &amp; Search</a></li>
-              <li><a href="tools.html">Tools</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="case-studies.html" data-i18n="nav.case_studies">Case Studies</a></li>
+              <li><a href="ai-search.html" data-i18n="nav.ai_search">AI &amp; Search</a></li>
+              <li><a href="tools.html" data-i18n="nav.tools">Tools</a></li>
+              <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
           </div>
 

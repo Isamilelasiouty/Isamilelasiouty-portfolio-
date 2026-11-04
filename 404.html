@@ -22,7 +22,7 @@
   <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -42,19 +42,22 @@
 
         <div class="nav-desktop">
           <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-            <li><a href="ai-search.html" class="nav-link">AI &amp; Search</a></li>
-            <li><a href="tools.html" class="nav-link">Tools</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+            <li><a href="case-studies.html" class="nav-link" data-i18n="nav.case_studies">Case Studies</a></li>
+            <li><a href="ai-search.html" class="nav-link" data-i18n="nav.ai_search">AI &amp; Search</a></li>
+            <li><a href="tools.html" class="nav-link" data-i18n="nav.tools">Tools</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
           </ul>
 
           <div class="nav-actions">
+            <button type="button" class="lang-toggle" aria-label="Toggle language">
+              <span class="lang-text">عربي</span>
+            </button>
             <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
               <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
               <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
             </button>
-            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download>Download CV</a>
+            <a href="assets/cv/Ismail-El-Asiouty-CV.pdf" class="btn btn-primary btn-sm" download data-i18n="nav.download_cv">Download CV</a>
           </div>
         </div>
       </nav>

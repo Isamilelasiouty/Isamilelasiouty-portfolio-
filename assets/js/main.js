@@ -33,6 +33,144 @@
   }
 
   // -------------------------------------------------------------------------
+  // 1.1 BILINGUAL CONTROLLER (EN / AR)
+  // -------------------------------------------------------------------------
+  const LANG_KEY = 'asiouty_portfolio_lang';
+  let currentLang = 'en';
+
+  const translations = {
+    en: {
+      'nav.home': 'Home',
+      'nav.case_studies': 'Case Studies',
+      'nav.ai_search': 'AI & Search',
+      'nav.tools': 'Tools',
+      'nav.contact': 'Contact',
+      'nav.download_cv': 'Download CV',
+      'nav.toggle_theme': 'Toggle Theme',
+      'hero.badge': 'SEO Command Center',
+      'hero.title': 'Ismail El Asiouty',
+      'hero.role': 'SEO Specialist',
+      'hero.intro': 'Product-minded SEO Specialist with proven success optimizing 23+ websites across diverse industries. Scaled organic search performance on Google Search Console (3-month comparison): grew clicks from 1.74K to 4.82K (+177%), impressions from 253K to 691K (+173%), and improved average position from 9.2 to 5.2. Creator of 9+ SEO tools and founder of “SEO GPS” automation platform. Business Information Systems student specializing in Website Development.',
+      'hero.cta_cv': 'Download CV',
+      'hero.cta_cases': 'View Case Studies',
+      'hero.cta_contact': 'Contact me',
+      'hero.signal_monitor': 'Organic Signal Monitor',
+      'hero.live_analysis': 'Live Index Analysis',
+      'proof.years_label': 'Years of experience',
+      'proof.sites_label': 'Websites optimized',
+      'proof.tools_label': 'SEO tools & platforms built',
+      'sim.site_name': 'Ismail El Asiouty',
+      'sim.snippet': 'Product-minded SEO Specialist with proven success optimizing 23+ websites across diverse industries. Scaled GSC performance: <strong>+177% clicks</strong>, <strong>+173% impressions</strong>, avg position 9.2 to 5.2. Founder of “SEO GPS” automation platform.',
+      'sim.sitelink_cases': 'Case Studies',
+      'sim.sitelink_gps': 'SEO GPS Platform',
+      'sim.sitelink_ai': 'AI & GEO Engine',
+      'sim.sitelink_contact': 'Contact Ismail',
+      'tools.lab_tag': 'SEO Software Lab',
+      'tools.lab_title': 'Custom SEO Diagnostic & Automation Tools',
+      'tools.lab_desc': 'Python and AI-powered utilities built to automate issue detection and streamline audits, led by the flagship SEO GPS automation platform.',
+      'tools.gps_meta': 'Flagship Automation Platform • Live Web App',
+      'tools.gps_title': 'SEO GPS — Intelligent Search Navigation & Diagnostics',
+      'tools.gps_desc': 'Automated SEO guidance platform engineered by Ismail El Asiouty. Analyzes on-page architecture, visualizes keyword positioning trajectories, automates repetitive technical checks, and provides clear algorithmic remediation pathways.',
+      'tools.launch_btn': 'Launch SEO GPS →',
+      'tools.details_btn': 'Platform Architecture',
+      'tools.pipeline_tag': 'Tool Suite in Progress',
+      'tools.pipeline_title': 'Additional Diagnostic Utilities (9+ Tools Suite)',
+      'tools.tool1_title': 'Orphan Page & Internal Link Auditor',
+      'tools.tool1_desc': 'Crawl analysis engine that maps the complete internal URL link graph, detecting isolated orphan pages and calculating internal PageRank distribution.',
+      'tools.tool2_title': 'AI Overview Readiness Scanner',
+      'tools.tool2_desc': 'Analyzes entity density, schema markup compliance, and high-intent Q&A structure for inclusion in Google AI Overviews and answer engines.'
+    },
+    ar: {
+      'nav.home': 'الرئيسية',
+      'nav.case_studies': 'دراسات الحالة',
+      'nav.ai_search': 'الذكاء الاصطناعي والبحث',
+      'nav.tools': 'أدوات السيو',
+      'nav.contact': 'تواصل معي',
+      'nav.download_cv': 'تحميل السيرة الذاتية',
+      'nav.toggle_theme': 'تبديل المظهر',
+      'hero.badge': 'مركز قيادة محركات البحث (SEO Command Center)',
+      'hero.title': 'إسماعيل الأسيوطي',
+      'hero.role': 'أخصائي تحسين محركات البحث (SEO Specialist)',
+      'hero.intro': 'أخصائي سيو ذو عقلية تركّز على تطوير المنتجات والنمو الرقمي، أمتلك سجلاً حافلاً في تحسين وتطوير أكثر من 23 موقعاً إلكترونياً عبر قطاعات متنوعة. حققت نمواً قياسياً في الأداء العضوي عبر Google Search Console (مقارنة 3 أشهر): زيادة النقرات من 1.74K إلى 4.82K (+177%)، وارتفاع مرات الظهور من 253K إلى 691K (+173%)، وتحسين متوسط الترتيب من 9.2 إلى 5.2. مطور لأكثر من 9 أدوات سيو ومؤسس منصة الأتمتة «SEO GPS». طالب نظم معلومات الأعمال (BIS) متخصص في تطوير المواقع.',
+      'hero.cta_cv': 'تحميل السيرة الذاتية (CV)',
+      'hero.cta_cases': 'عرض دراسات الحالة',
+      'hero.cta_contact': 'تواصل معي',
+      'hero.signal_monitor': 'مراقب إشارات الفهرسة العضوية',
+      'hero.live_analysis': 'تحليل مباشر للفهرسة',
+      'proof.years_label': 'سنوات خبرة متخصصة',
+      'proof.sites_label': 'موقعاً إلكترونياً تم تحسينه',
+      'proof.tools_label': 'أدوات ومنصات سيو مؤتمتة',
+      'sim.site_name': 'إسماعيل الأسيوطي',
+      'sim.snippet': 'أخصائي سيو ذو عقلية تركز على تطوير المنتجات بخبرة في تحسين أكثر من 23 موقعاً إلكترونياً. نمو قياسي على Google Search Console: <strong>+177% نقرات</strong>، <strong>+173% ظهور</strong>، وتحسين الترتيب من 9.2 إلى 5.2. مؤسس منصة «SEO GPS» للأتمتة.',
+      'sim.sitelink_cases': 'دراسات الحالة',
+      'sim.sitelink_gps': 'منصة SEO GPS',
+      'sim.sitelink_ai': 'محرك الذكاء الاصطناعي (GEO)',
+      'sim.sitelink_contact': 'تواصل مع إسماعيل',
+      'tools.lab_tag': 'معمل برمجيات السيو',
+      'tools.lab_title': 'أدوات الفحص والأتمتة المخصصة',
+      'tools.lab_desc': 'حلول وأدوات برمجية مبنية بلغة بايثون والذكاء الاصطناعي لاكتشاف المشكلات التقنية وتسريع عمليات التدقيق، تقودها منصة SEO GPS المتطورة.',
+      'tools.gps_meta': 'المنصة الرائدة للأتمتة • تطبيق ويب مباشر',
+      'tools.gps_title': 'SEO GPS — الملاحة الذكية وتشخيص محركات البحث',
+      'tools.gps_desc': 'منصة أتمتة وإرشاد سيو متقدمة من تطوير إسماعيل الأسيوطي. تحلل البنية الداخلية لصفحات الويب، وترسم مسار تمركز الكلمات المفتاحية، وتؤتمت الفحوصات التقنية المتكررة مع مسارات علاجية واضحة.',
+      'tools.launch_btn': 'تشغيل منصة SEO GPS ←',
+      'tools.details_btn': 'معمارية المنصة',
+      'tools.pipeline_tag': 'قيد الإطلاق والتطوير',
+      'tools.pipeline_title': 'حزمة أدوات التشخيص التقني (أكثر من 9 أدوات)',
+      'tools.tool1_title': 'فاحص الصفحات اليتيمة والروابط الداخلية',
+      'tools.tool1_desc': 'محرك تحليل زحف يرسم مخطط الربط الداخلي للروابط (Internal Link Graph)، ويكتشف الصفحات اليتيمة المعزولة ويوزع قوة البيج رانك الداخلي.',
+      'tools.tool2_title': 'فاحص جاهزية الذكاء الاصطناعي (AI Overviews)',
+      'tools.tool2_desc': 'يقيس كثافة الكيانات (Entities) وتطابق بيانات Schema وهيكلة الأسئلة والأجوبة المؤهلة للظهور في ملخصات الذكاء الاصطناعي من جوجل ومحركات الإجابة.'
+    }
+  };
+
+  function setLanguage(lang) {
+    currentLang = lang === 'ar' ? 'ar' : 'en';
+    root.setAttribute('lang', currentLang);
+    root.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+    localStorage.setItem(LANG_KEY, currentLang);
+
+    // Apply translations
+    const dict = translations[currentLang] || translations.en;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        // If element contains an inner SVG or icon, replace text safely
+        const svg = el.querySelector('svg');
+        if (svg && el.childNodes.length > 1) {
+          // preserve svg
+          el.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+              node.textContent = ' ' + dict[key] + ' ';
+            }
+          });
+        } else {
+          el.innerHTML = dict[key];
+        }
+      }
+    });
+
+    // Update lang-toggle buttons label
+    document.querySelectorAll('.lang-toggle .lang-text').forEach(span => {
+      span.textContent = currentLang === 'ar' ? 'English' : 'عربي';
+    });
+  }
+
+  function toggleLanguage() {
+    const nextLang = currentLang === 'ar' ? 'en' : 'ar';
+    setLanguage(nextLang);
+  }
+
+  function initLanguage() {
+    const saved = localStorage.getItem(LANG_KEY);
+    if (saved) {
+      setLanguage(saved);
+    } else {
+      setLanguage('en');
+    }
+  }
+
+
+  // -------------------------------------------------------------------------
   // 2. MOBILE NAVIGATION
   // -------------------------------------------------------------------------
   function initMobileNav() {
@@ -128,44 +266,57 @@
     const queryEl = document.getElementById('hero-query-display');
     const scanBar = document.getElementById('sim-scan-progress');
     const rankBadge = document.getElementById('hero-rank-badge');
+    const titleLink = document.getElementById('hero-result-title');
     if (!queryEl) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      queryEl.textContent = 'SEO Company';
-      if (scanBar) scanBar.style.width = '100%';
-      return;
+    // Strict rule: Result title must always display strictly Ismail El Asiouty
+    if (titleLink) {
+      titleLink.textContent = 'Ismail El Asiouty';
     }
 
-    const queries = [
-      'SEO Company',
+    const queriesEn = [
+      'SEO',
+      'شركة SEO',
       'Best SEO Specialist',
-      'Technical SEO Audit',
-      'GEO & AI Search Optimization',
-      'High-Intent Organic Growth'
+      'SEO Company',
+      'Technical SEO Audit'
+    ];
+
+    const queriesAr = [
+      'شركة SEO',
+      'SEO',
+      'أفضل خبير سيو',
+      'تحسين محركات البحث',
+      'أخصائي سيو'
     ];
 
     let queryIdx = 0;
     let charIdx = 0;
     let isDeleting = false;
 
+    function getQueries() {
+      return currentLang === 'ar' ? queriesAr : queriesEn;
+    }
+
     function typeLoop() {
-      const currentQuery = queries[queryIdx];
+      const activeQueries = getQueries();
+      const currentQuery = activeQueries[queryIdx % activeQueries.length];
 
       if (isDeleting) {
         charIdx--;
         queryEl.textContent = currentQuery.substring(0, charIdx);
         if (charIdx === 0) {
           isDeleting = false;
-          queryIdx = (queryIdx + 1) % queries.length;
-          setTimeout(typeLoop, 450);
+          queryIdx = (queryIdx + 1) % activeQueries.length;
+          setTimeout(typeLoop, 500);
           return;
         }
-        setTimeout(typeLoop, 28);
+        setTimeout(typeLoop, 30);
       } else {
         charIdx++;
         queryEl.textContent = currentQuery.substring(0, charIdx);
         if (charIdx === currentQuery.length) {
-          // Completed typing query: simulate instant AI search index scan
+          // Completed typing query: simulate instant Google search & AI index scan
           if (scanBar) {
             scanBar.style.width = '100%';
             setTimeout(() => {
@@ -174,24 +325,24 @@
                 scanBar.style.width = '0%';
                 scanBar.style.opacity = '1';
               }, 300);
-            }, 600);
+            }, 550);
           }
           if (rankBadge) {
-            rankBadge.style.transform = 'scale(1.12)';
+            rankBadge.style.transform = 'scale(1.15)';
             setTimeout(() => {
               rankBadge.style.transform = 'scale(1)';
             }, 350);
           }
-          // Pause to read the ranked result
+          // Pause to read the authentic Google #1 ranking result
           isDeleting = true;
-          setTimeout(typeLoop, 3600);
+          setTimeout(typeLoop, 3400);
           return;
         }
-        setTimeout(typeLoop, 65 + Math.random() * 45);
+        setTimeout(typeLoop, 65 + Math.random() * 40);
       }
     }
 
-    // Start with a gentle delay
+    // Start typing
     setTimeout(typeLoop, 1000);
   }
 
@@ -587,6 +738,7 @@
   // -------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', () => {
     initTheme();
+    initLanguage();
     initMobileNav();
     initObserver();
     initLightbox();
@@ -600,6 +752,11 @@
     // Theme toggle button click
     document.querySelectorAll('.theme-toggle').forEach(btn => {
       btn.addEventListener('click', toggleTheme);
+    });
+
+    // Language toggle button click
+    document.querySelectorAll('.lang-toggle').forEach(btn => {
+      btn.addEventListener('click', toggleLanguage);
     });
 
     // Back to top click
